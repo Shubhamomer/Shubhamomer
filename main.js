@@ -1,18 +1,14 @@
-function Move(str) {
-var a = 20;
-    switch(str) {
-      case "Up":
-    var x=document.getElementById('Car').offsetTop;
-    x = x-a;
-    document.getElementById('Car').style.marginTop=x+'px';
-        break;
-      
-      case "buttom":
-      var x = document.getElementById('Car').offsetTop;
-      x = x+a;
-      document.getElementById('Car').style.marginTop=x+'px';
-      break;
-    }
-    
-}
+//varyfie your canvas
+var canvas = document.getElementById("Mycanvas");
 
+//start your drawing
+var ctx = canvas.getContext("2d");
+
+ctx.fillStyle = "black";
+ctx.fillRect(70,30,108,20);
+
+ctx.fillStyle = "black";
+ctx.fillRect(60, 260, 108, 20);
+
+var x = 70;
+var Y =

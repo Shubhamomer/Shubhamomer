@@ -1,23 +1,35 @@
 body {
     font-size: 15pt;
     margin: 0px;
+background-color: yellow;
 }
 .screen{
   border: solid 2px black;
-  height: 300px;
+  height: 450px;
   margin-bottom: 0px;
-  
+  background-image: url("/Road.jpg");
+  background-size: 360px 470px;
+  background-repeat: repeat-y;
+  background-position: 0px 100px;
 }
 
+.cen{
+  border: solid 2px black;
+  z-index: 4;
+  position: relative;
+  background-color: yellow
+}
 
 .button{
-  height: 150px;
+  height: 155px;
   width: 250px;
   background-color: white;
   border: solid 2px black;
   top: 190px;
   bottom: 150px;
-  margin-top: 150px;
+  margin-top: 10px;
+  background-color: black;
+  z-index: 6;
 }
 .up{
   height: 50px;
@@ -26,8 +38,138 @@ body {
 }
 
 .car{
-  width: 30px;
+  width: 50px;
+  height: 90px;
+  background-color: red;
+  margin-top: 200px;
+  position: relative;
+  z-index: 5;
+}
+
+#left{
+  position: absolute;
+  margin-left: 50px;
+  margin-bottom: 0px;
+  right: 80px;
   height: 50px;
+  width: 50px;
+  background-color: red;
+}
+
+#right{
+  position: absolute;
+  left: 80px;
+  margin-bottom: 0px;
+  float: right;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+}
+
+#butom{
+  height: 50px;
+  width: 50px;
   background-color: red;
   margin-top: 50px;
+}
+
+button{
+  font-size: 50px;
+}
+
+#rude{
+  border: solid 2px black;
+  width: 300px;
+}
+
+.other {
+  width: 50px;
+  height: 70px;
+  background-color: blue;
+  position: absolute;
+  bottom: 120px;
+}
+
+.anmy{
+  width: 50px;
+  height: 90px;
+  border: solid 2px white;
+  background-color: blue;
+  top: 50px;
+  bottom: 40px;
+  position: absolute;
+  z-index: 3;
+}
+
+#anmyO{
+  left: 270px;
+  top: 0px;
+  display: none;
+  position: fixed;
+  z-index: 3;
+  animation-name: Any;
+  animation-duration: 5s;
+  animation-iteration-count: 50;
+}
+
+#anmytherd{
+  left: 170px;
+  top: 0px;
+  display: none;
+  background-color: red;
+  animation-name: Any;
+  animation-duration: 9s;
+  animation-iteration-count: 50;
+}
+
+#anmyh {
+  left: 100px;
+  top: 0px;
+  display: none;
+  background-color: yellow;
+  animation: Any 5s  infinite;
+}
+
+
+
+#Anmyfiv {
+  left: 50px;
+  top: 0px;
+  display: none;
+  background-color: red;
+  animation: Any 8s linear 0s infinite;
+}
+
+@keyframes Any {
+  0%{
+    top: 0px;
+  }
+
+  100%{
+    top: 80%;
+  }
+}
+
+#holder{
+  height: 3px;
+  width: 53px;
+  background-color: red;
+  margin-left: 268px;
+  margin-top: 92px;
+  float: right;
+  position: fixed;
+  z-index: 4;
+  animation-name: An;
+  animation-duration: 5s;
+  animation-iteration-count: 5;
+  display: none;
+}
+
+.ocar {
+  height: 3px;
+  width: 50px;
+  background-color: Black;
+  margin-top: 200px;
+  position: fixed;
+  z-index: 9;
 }

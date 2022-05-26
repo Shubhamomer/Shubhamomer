@@ -1,0 +1,8 @@
+body {
+    font-size: 15pt;
+    background-image: url("/IMG.jpg" );
+    background-size: 300px,10px;
+    background-repeat: no-repeat;
+    margin-top: 200px;
+    margin-image-top: 200px;
+}
