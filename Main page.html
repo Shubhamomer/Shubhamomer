@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  
+
+  <!-- Custom Styles -->
+<style type="text/css" media="all">
+
+  body {
+    font-size: 15pt;
+    margin: 0px;
+    background-color: #333;
+}
+.boxx{
+   width: 298px;
+   background-image: url("/p.jp");
+   background-size: 300px 500px;
+   background-repeat: no-repeat;
+   height: 390px;
+   margin: 0px;
+   margin-left: 0px;
+   margin-bottom: 10px;
+   border: solid 30px;
+   border-image-source:  url("/F.jpg");
+   border-image-slice: 100;
+   background-color: #F4F4FE;
+}
+input {
+  width: 70%;
+  margin: 10px auto;
+  
+}
+#button1,#button2,#button3,#button5{
+  margin-right: 15px;
+  margin-left: 8px;
+ 
+}
+.run{
+  margin: 8px;
+}
+
+#d1,#d2,#d3{
+  display: none;
+  margin-left: 8px;
+}
+
+#center{
+  margin: 10px;
+  margin-left: 80px;
+  margin-top: 160px;
+  display: ;
+}
+
+#file{
+  display: none;
+}
+#like{
+  border: dashed 2px black;
+  padding: 20px;
+  background-color: #A8A9BA;
+  z-index: ;
+  display: ;
+}
+
+button{
+  background-color: ;
+  color: black;
+}
+
+#previw{
+margin-bottom: 300px;
+ margin: 0px;
+}
+
+</style>
+</head>
+
+
+<body>
+  <div id="boxi">
+  <div class="boxx" id="box" >
+   <div id="previw">
+    <div id="center">
+      
+    <label for="file" id="like">
+      file upload</label>
+    <input type="file" id="file" accept="/img" onchange="file1()"/>
+    
+    
+      
+    </div>
+    <img id="image" src="/p.jpg" width="200" height="200" />
+    </div>
+      
+      </div>
+    </div>
+    
+         <div id="div">
+    <hr />
+         <button type="submit" id="button1" onclick="Manual()">Manual</button>
+         <button type="submit" id="button2" onclick="filter()">Filter</button>
+         <button type="submit" id="button3" onclick="border()">border</button>
+       <a href="">  <button type="submit" id="button5" onclick="Take()" >Download</button>
+         <hr /></a>
+    
+   
+  <div id=d1>
+   <label for="range">Radius:</label>
+  <input type="range"  id="range" min="0" max="50" step="1" oninput="radius()" value="0" /><br />
+
+  <label for="rang">Width:</label>
+  <input type="range"  id="rang" min="0" max="100" step="1" oninput="widh()" value="0" /><br />
+  
+  <label for="rangee">height:</label>
+  <input type="range"  id="rangee" min="0" max="400" step="1" oninput="hight()" value="0" />
+  
+  <label for="range">Rotate</label>
+  <input type="range" id="rangeR" min="0" max="50" step="1" oninput="Rotate()" value="0" /><br />
+   </div>
+    
+    
+   <div id="d2">
+   <label for="range">Blur</label>
+  <input type="range"  id="rangeb" min="0" max="50" step="1" oninput="rangei()" value="0" /><br />
+
+  <label for="rang">Opacity</label>
+  <input type="range"  id="rangeopacity" min="0" max="100" step="1" oninput="Opacity()" value="0" /><br />
+  
+  <label for="rangee">Britness</label>
+  <input type="range" id="rangeBritness" min="0" max="400" step="1" oninput="Brit()" value="0" />
+  
+  <label for="rangee">Contras</label>
+  <input type="range" id="rangecontrast" min="0" max="400" step="1" oninput="Contras()" value="0" />
+  
+  <label for="rangee">Saturated</label>
+  <input type="range" id="rangesaturated" min="0" max="400" step="1" oninput="Saturated()" value="0" />
+   <label for="range">red</label>
+  <input type="range"  id="rangered" min="0" max="100" step="1" oninput="red()" value="0" /><br />
+
+  <label for="rang">Blue</label>
+  <input type="range"  id="rangeblue" min="0" max="100" step="1" oninput="Blue()" value="0" /><br />
+  
+  <label for="rangee">black</label>
+  <input type="range"  id="rangeblack" min="0" max="400" step="1" oninput="Black()" value="0" />
+  
+  <label for="range">green</label>
+  <input type="range"  id="rangegreen" min="0" max="100" step="1" oninput="green()" value="0" /><br />
+
+  <label for="rang">white</label>
+  <input type="range"  id="rangewhite" min="0" max="100" step="1" oninput="white()" value="0" /><br />
+  
+  <label for="rangee">Orange</label>
+  <input type="range"  id="rangeorange" min="0" max="100" step="1" oninput="orange()" value="0" />
+  
+   <label for="range">pink</label>
+  <input type="range"  id="rangepink" min="0" max="100" step="1" oninput="pink()" value="0" /><br />
+
+  <label for="rang">yellow</label>
+  <input type="range"  id="rangeyellow" min="0" max="100" step="1" oninput="yellow()" value="0" /><br />
+   </div>
+   
+   <div id="d3">
+   
+   <button onclick="run()" class="run" ><img id="img" style="hight: 30px; width: 40px;" src="/L.jpg" /></button>
+   
+   <button onclick="run1()" class="run" ><img id="img1" style="hight: 50px; width: 50px;" src="/p.jpg" /></button>
+   
+   <button onclick="run2()" class="run" ><img id="img2" style="hight: 50px; width: 50px;" src="/3.jpg" /></button>
+   
+   <button onclick="run3()" class="run" ><img style="hight: 20px; width: 20px;" src="/i.jpg" /></button>
+   
+   <button onclick="run4()" class="run" ><img style="hight: 50px; width: 50px;" src="/f.jpg" /></button>
+   
+   <button onclick="run5()" class="run" ><img style="hight: 40px; width: 40px;" src="/7.jpg" /></button>
+   
+   </div>
+     
+   </div>
+   
+  <script>
+  
+     function file1(){
+       if (event.target.files.length>0)
+      {
+        var src = URL.createObjectURL(event.target.files[0]);
+        var preview = document.getElementById("image");
+        preview.src = src;
+        preview.style.display = "block";
+
+        
+      }
+       }
+       
+     function Take()  {
+       var img = document. createElement("img");
+       img.src = "image.png";
+       var src = document.createElement("div");
+     }
+     
+     function run1(){
+       box.style.borderImageSource = "url" + "(" + "/p.jpg" + ")" ;
+     }
+     
+     function run(){
+     box.style.borderImageSource = "url" + "(" + "/L.jpg" + ")" ;
+     }
+     
+     function run2(){
+     box.style.borderImageSource = "url" + "(" + "/3.jpg" + ")" ;
+     }
+     
+     function run3(){
+     box.style.borderImageSource = "url" + "(" + "/i.jpg" + ")" ;
+     }
+     
+     function run4(){
+     box.style.borderImageSource = "url" + "(" + "/F.jpg" + ")" ;
+     }
+     
+     function run5(){
+     box.style.borderImageSource = "url" + "(" + "/7.jpg" + ")" ;
+     }
+     function Manual(){
+       d1.style.display = "block";
+       d2.style.display = "none";
+       d3.style.display = "none";
+     }
+    
+     function filter(){
+     d2.style.display = "block";
+     d1.style.display = "none";
+     d3.style.display = "none";
+     }
+     
+     function border(){
+     d1.style.display = "none";
+     d2.style.display = "none";
+     d3.style.display = "block";
+     }
+   
+    function radius(){
+    var val = range.value;
+    box.style.borderRadius = val + "%";
+    }
+
+   function widh(){
+   var vall = rang.value;
+   box.style.width = vall + "%";
+   }
+
+   function hight(){
+   var valle = rangee.value;
+    box.style.height =  valle + "px";
+}
+  
+   function Rotate(){
+   var val7 = rangeR.value;
+   box.style.transform = "Rotate" + "(" + val7 + "deg)" ;
+   }
+  
+   function rangei(){
+      var val1 = rangeb.value;
+      box.style.filter = "blur" + "(" + val1 + "px)" ;
+   }
+   
+   function Opacity(){
+   var val2 = rangeopacity.value;
+   boxi.style.filter = "Opacity" + "(" + val2 + "%" + ")" ;
+   
+   }
+   
+   function Brit(){
+   var val1 = rangeBritness.value;
+   box.style.filter = "brightness" + "(" + val1 + "%" + ")" ;
+   }
+   
+   function red(){
+   var val1 = rangered.value;
+   box.style.filter = "Opacity" + "(" + val1 + "%" + ")" ;
+   document.body.style.backgroundColor = "red";
+   div.style.backgroundColor = "#333";
+   }
+   
+   function Blue(){
+   var val1 = rangeblue.value;
+   box.style.filter = "Opacity" + "(" + val1 + "%" + ")" ;
+   document.body.style.backgroundColor = "Blue";
+   div.style.backgroundColor = "#333";
+   }
+   
+   function Black(){
+   var val1 = rangeblack.value;
+   box.style.filter = "Opacity" + "(" + val1 + "%" + ")" ;
+   document.body.style.backgroundColor = "Black";
+   div.style.backgroundColor = "#333";
+   }
+   
+   function yellow(){
+   var val1 = rangeyellow.value;
+   box.style.filter = "Opacity" + "(" + val1 + "%" + ")" ;
+   document.body.style.backgroundColor = "yellow";
+   div.style.backgroundColor = "#333";
+   }
+   
+   function green(){
+   var val1 = rangegreen.value;
+   box.style.filter = "Opacity" + "(" + val1 + "%" + ")" ;
+   document.body.style.backgroundColor = "green";
+   div.style.backgroundColor = "#333";
+   }
+   
+   function orange(){
+   var val1 = rangeorange.value;
+   box.style.filter = "Opacity" + "(" + val1 + "%" + ")" ;
+   document.body.style.backgroundColor = "Orange";
+   div.style.backgroundColor = "#333";
+   }
+   
+   function white(){
+   var val1 = rangewhite.value;
+   box.style.filter = "Opacity" + "(" + val1 + "%" + ")" ;
+   document.body.style.backgroundColor = "white";
+   div.style.backgroundColor = "#333";
+   }
+   
+   function pink(){
+   var val1 = rangepink.value;
+   box.style.filter = "Opacity" + "(" + val1 + "%" + ")" ;
+   document.body.style.backgroundColor = "pink";
+   div.style.backgroundColor = "#333";
+   }
+   
+   function Contras(){
+   var val1 = rangecontrast.value;
+   box.style.filter = "Contrast" + "(" + val1 + "%" + ")" ;
+   }
+   
+   function Saturated(){
+   var val1 = rangesaturated.value;
+   box.style.filter = "Saturate" + "(" + val1 + "%" + ")" ;
+   }
+  </script>
+</body>
+</html>

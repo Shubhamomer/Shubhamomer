@@ -1,0 +1,33 @@
+body {
+    font-size: 15pt;
+    margin: 0px;
+}
+.screen{
+  border: solid 2px black;
+  height: 300px;
+  margin-bottom: 0px;
+  
+}
+
+
+.button{
+  height: 150px;
+  width: 250px;
+  background-color: white;
+  border: solid 2px black;
+  top: 190px;
+  bottom: 150px;
+  margin-top: 150px;
+}
+.up{
+  height: 50px;
+  width: 50px;
+  background-color: red;
+}
+
+.car{
+  width: 30px;
+  height: 50px;
+  background-color: red;
+  margin-top: 50px;
+}
